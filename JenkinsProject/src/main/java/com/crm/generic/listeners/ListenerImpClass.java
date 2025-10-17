@@ -24,8 +24,8 @@ public class ListenerImpClass implements ITestListener, ISuiteListener {
 
 	public void onStart(ISuite suite) {
 		System.out.println("Suite starts");
-		String time = new Date().toString().replace(" ", "_").replace(":","_");
-		spark = new ExtentSparkReporter("./AdvanceReport/report"+time+".html");
+		//String time = new Date().toString().replace(" ", "_").replace(":","_");
+		spark = new ExtentSparkReporter("./AdvanceReport/AdvReport.html");
 		spark.config().setDocumentTitle("Vtiger");
 		spark.config().setReportName("VtigerReport");
 		spark.config().setTheme(Theme.DARK);
