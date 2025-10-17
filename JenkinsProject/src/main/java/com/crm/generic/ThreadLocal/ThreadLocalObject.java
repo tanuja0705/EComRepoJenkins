@@ -10,6 +10,7 @@ public class ThreadLocalObject {
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	
 	public static WebDriver getDriver() {
+		System.out.println("hii");
 		return driver.get();
 	}
 	

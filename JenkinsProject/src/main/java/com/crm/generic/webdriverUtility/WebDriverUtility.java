@@ -39,6 +39,7 @@ public class WebDriverUtility {
 			String windo_id = it.next();
 			driver.switchTo().window(windo_id);
 			
+			
 			String currentUrl = driver.getCurrentUrl();
 			if(currentUrl.contains(title)) {
 				break;
